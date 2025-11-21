@@ -48,16 +48,6 @@ curl http://localhost:3000/health
 
 ---
 
-## Environment
-
-Put environment variables in a `.env` file in `server/` or set them in your shell. Important vars:
-- `PORT` — server port (default `3000`)
-- `MONGO_URI` — MongoDB connection string (default `mongodb://localhost:27017/cyberdojo`)
-- `NODE_ENV` — node environment (`development` | `production`, default `development`)
-- `ATTACK_ALLOWLIST` — comma-separated hosts allowed for scenario HTTP steps (e.g. `localhost,example.com`). If empty, no hosts are allowed by the attack executor.
-- `ATTACK_BLOCK_BEHAVIOR` — behavior when a step targets a host not on the allowlist: `continue` (log and continue) or `fail` (mark step/run as failed). Default: `continue`.
-
----
 
 ## Important folders (src)
 
