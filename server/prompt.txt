@@ -1,0 +1,42 @@
+You are an expert backend engineer.  
+Generate the server-side code step-by-step for a security-training platform called “CyberDojo”.
+
+Tech stack:
+- Node.js (TypeScript)
+- Express
+- MongoDB (Mongoose)
+
+Goal:
+Create a backend that manages attack scenarios, runs simulated attacks, stores logs, and exposes REST APIs.
+
+Requirements:
+1. Create the full folder structure under /server as described:
+   /src
+     /config (env, logger, db)
+     /routes (scenarios, runs, alerts)
+     /controllers
+     /services
+     /repositories
+     /models (Scenario, Run, Alert – Mongoose schemas)
+     /core/attack (AttackEngine, HttpExecutor, scenarios JSON)
+     /core/detection (AlertEngine, rules)
+     /middleware
+     /utils
+     /types
+2. Generate minimal initial code files for each folder:
+   - index.ts (server entry)
+   - app.ts (Express setup)
+   - db.ts (Mongo connection)
+   - models with basic schemas
+   - routes with empty handlers
+   - controllers/services with placeholders
+3. Use TypeScript best practices (interfaces, types, async/await).
+4. No business logic yet — only scaffolding + clean architecture.
+5. The output should be a complete first version of the backend skeleton ready to run.
+
+Start now by generating:
+- package.json
+- tsconfig.json
+- src/index.ts
+- src/app.ts
+- src/config/db.ts

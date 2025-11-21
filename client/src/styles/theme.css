@@ -1,0 +1,32 @@
+:root {
+  --primary: #2563eb;
+  --muted: #6b7280;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+}
+
+/* Light / Dark theme variables applied via class on <html> */
+.light {
+  --bg: #f8fafc;
+  --text: #111827;
+  --card: #ffffff;
+  --primary: #2563eb;
+  --muted: #6b7280;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+}
+
+.dark {
+  --bg: #0b1220;
+  --text: #e6eef8;
+  --card: #071123;
+  --primary: #4f9cff;
+  --muted: #9aa8bf;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+html { transition: background-color 200ms linear, color 200ms linear; }

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "example-scenario",
+    "name": "Example Scenario",
+    "description": "A simple example attack scenario",
+    "steps": [
+      { "type": "http", "method": "GET", "url": "https://example.com" }
+    ]
+  }
+]

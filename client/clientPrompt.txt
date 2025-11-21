@@ -1,0 +1,111 @@
+You are an expert frontend architect and senior React developer.
+
+Goal:
+Generate, step-by-step, a complete and production-ready frontend client for the “CyberDojo” security training platform.  
+The frontend must fully align with an existing backend (Node.js + Express + MongoDB) and use the exact same API endpoints and data models.
+
+Tech Stack:
+- React + TypeScript (TSX)
+- Vite build system
+- React Router v6
+- Zustand or Redux Toolkit for state
+- Axios or Fetch wrapper for API calls
+- Simple, consistent UI components
+
+Backend API (already exists):
+- GET /api/scenarios
+- POST /api/scenarios/:id/run
+- GET /api/runs
+- GET /api/runs/:id
+- GET /api/alerts
+- POST /api/alerts
+
+Your tasks:
+1. **Propose a scalable folder structure** under /client/src exactly as written below.
+2. **Generate all initial files** (empty or basic implementation) to create the skeleton.
+3. **Ensure all API calls match backend endpoints** and share consistent types (Scenario, Run, Alert).
+4. Follow a clean architecture and modular React design.
+
+Required folder structure
+/client
+  /src
+    /api
+      httpClient.ts
+      scenariosApi.ts
+      runsApi.ts
+      alertsApi.ts
+    /config
+      apiConfig.ts
+    /components
+      /layout
+        Sidebar.tsx
+        Topbar.tsx
+        MainLayout.tsx
+      /common
+        Button.tsx
+        Card.tsx
+        Spinner.tsx
+        Tag.tsx
+    /features
+      /scenarios
+        pages/
+          ScenariosListPage.tsx
+          ScenarioDetailsPage.tsx
+        components/
+          ScenarioCard.tsx
+          ScenarioTimeline.tsx
+        types.ts
+      /runs
+        pages/
+          RunsHistoryPage.tsx
+          RunDetailsPage.tsx
+        components/
+          RunStatusBadge.tsx
+          RunLogsViewer.tsx
+        types.ts
+      /alerts
+        pages/
+          AlertsDashboardPage.tsx
+        components/
+          AlertList.tsx
+          AlertDetailsDrawer.tsx
+        types.ts
+    /hooks
+      useFetch.ts
+      usePolling.ts
+      useScenarioRun.ts
+    /routes
+      index.tsx
+      ProtectedRoute.tsx   (placeholder for later)
+    /store
+      scenarios.store.ts
+      runs.store.ts
+      alerts.store.ts
+      index.ts
+    /styles
+      index.css
+      theme.css
+    /types
+      api.ts
+      common.ts
+    /utils
+      formatDate.ts
+      mapSeverityToColor.ts
+      logger.ts
+    main.tsx
+    App.tsx
+    vite-env.d.ts
+  index.html
+  tsconfig.json
+  package.json
+  vite.config.ts
+
+Instructions for Copilot:
+- Start by generating package.json, tsconfig.json, vite.config.ts, index.html, main.tsx, and App.tsx.
+- Then generate the folder structure exactly as written.
+- Then fill each file with minimal working scaffold code.
+- Then implement the typed API layer (httpClient + scenariosApi + runsApi + alertsApi).
+- Then add routing and main layout.
+- Then begin implementing each feature page as a functional component with placeholder UI.
+- Always generate one logical step at a time.
+- Keep everything aligned with the backend API contracts.
