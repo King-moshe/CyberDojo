@@ -187,9 +187,7 @@ All endpoints are mounted under `/api/`. Replace `:id` / `:runId` with actual ID
 - **AttackEngine target URL allowlist** — Only allows HTTP steps to hosts listed in the `ATTACK_ALLOWLIST` env variable (comma-separated, e.g. `localhost,example.com`).
   - Blocked steps are logged in the run log as `Step X blocked by allowlist: <url>`.
   - Set in `.env` or shell:
-    ```powershell
-    $env:ATTACK_ALLOWLIST='localhost,example.com'
-    ```
+
 
 - **Client dashboard** now fetches `/api/summary` and visualizes counts using Chart.js (see client/README.md).
 
